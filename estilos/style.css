@@ -90,6 +90,15 @@ h4{
     padding: 20px;    
 }
 
+.transition:hover{
+    transform: scale(1.2);
+}
+.transition{
+    transition: all 1s;
+}
+
+
+
 
 footer{
     background-image: url(../imagenes/fondoNaranja.png);
