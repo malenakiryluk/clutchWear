@@ -90,12 +90,11 @@ h4{
     padding: 20px;    
 }
 
-.transiton{
+.transition:hover{
+    transform: scale(1.2);
     transition: all 1s;
 }
-.transiton:hover{
-    transform: scale(1.2);
-}
+
 
 
 
