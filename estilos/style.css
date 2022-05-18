@@ -28,16 +28,16 @@ nav{
     display: flex;
     justify-content: center; 
     align-items: center;
-    margin: 1rem
 }
+.backGround{
+    background-image: url(../imagenes/fondoNaranja.png);
+}
+
 
 ul{
     display: flex;
 }
 
-ul li a{
-    padding: 1rem;
-}
 
 nav ul li{
     display: inline-block;
@@ -45,10 +45,14 @@ nav ul li{
 
 nav ul li a{
     color: black;
-    padding: 2vw;
     text-decoration: none;
-    font-size: 3vw;
+    margin-right: 1rem;
+    font-size: 40px;
     font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.navBar{
+    margin: 0rem;
+    padding: 0rem;
 }
 
 
