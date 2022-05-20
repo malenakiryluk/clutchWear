@@ -86,6 +86,9 @@ h4{
 }
 
 .foto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 10px 10px 5px 10px ;
 }
 
@@ -174,6 +177,14 @@ footer{
     "subtitulo subtitulo"
     "foto foto";
 }
+.galeriaInd{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 10% 90%;
+    grid-template-areas: 
+    "subtitulo subtitulo"
+    "foto foto";
+}
 .subtitulo{
     grid-area: subtitulo;
 }
@@ -258,22 +269,7 @@ footer{
     height: 9vh;
 }
 
-.header{
-    display: grid;
 
-    grid-template-columns: 5% 95%;
-
-    grid-template-areas: 
-    "logo nav";
-    
-}
-
-.logoClutch{
-    grid-area: logo;
-}
-.navBar{
-    grid-area: nav;
-}
 
 .logoClutch img{
     display: flex;
@@ -308,5 +304,58 @@ footer{
     display: grid;
     justify-content: center;
     align-items: center;
+}
+
+
+@media(max-width:750px){
+
+    .grilla{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0,2fr 1,5fr 1,2fr 0,8fr;
+    
+        grid-template-areas:
+        "header" 
+        "main"
+        "footer";
+    
+    }
+
+    #galeriaIndex{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 90%;
+        grid-template-areas:
+        "subtitulo"
+        "foto";
+    }
+
+    .galeriaInd{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 90%;
+        grid-template-areas: 
+        "subtitulo"
+        "foto";
+    }
+
+    #galeriaProt{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "fotoUno"
+        "fotoDos";
+    }
+
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr;
+    
+        grid-template-areas: 
+        "contacto" 
+        "marcas"
+        "redes";
+    }
+
 }
 
