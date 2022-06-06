@@ -45,3 +45,61 @@ footer{
     margin-bottom:0 ;
     color:black ;
 }
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+
+    grid-template-areas: 
+    "contacto marcas redes";
+}
+
+.contacto{
+    grid-area: contacto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 1rem 1rem 1rem;
+}
+.marcas{
+    grid-area: marcas;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 1rem 1rem 1rem;
+}
+.redes{
+    grid-area: redes;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+.redesHijos {
+    
+    img{
+    padding: 5px;
+    justify-content: space-evenly;
+    width: 5vw;
+    height: 9vh;
+    }
+}
+
+
+
+.logoClutch img{
+    display: flex;
+    width: 5vw;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 1rem 1rem 1rem 1rem;
+}
+
+
+.backGround{
+    background-image: $imagen;
+}

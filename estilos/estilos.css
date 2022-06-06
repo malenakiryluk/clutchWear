@@ -54,13 +54,95 @@ footer {
   color: black;
 }
 
-* {
-  padding: 0%;
-  margin: 0%;
+.footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "contacto marcas redes";
+}
+
+.contacto {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: contacto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.marcas {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: marcas;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.redes {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: redes;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.redesHijos img {
+  padding: 5px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 5vw;
+  height: 9vh;
+}
+
+.logoClutch img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 5vw;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  margin: 1rem 1rem 1rem 1rem;
 }
 
 .backGround {
   background-image: url(../imagenes/fondoNaranja.png);
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
 }
 
 .navBar {
@@ -187,6 +269,12 @@ h4 {
           column-gap: 5rem;
 }
 
+.galeria {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .galeria img {
   width: 30vw;
   height: 55vh;
@@ -248,6 +336,12 @@ h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #galeriaProt {
@@ -308,88 +402,6 @@ h4 {
   margin: 0rem 1rem 1rem 1rem;
 }
 
-.footer {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: "contacto marcas redes";
-}
-
-.contacto {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: contacto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 1rem 1rem 1rem 1rem;
-}
-
-.marcas {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: marcas;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 1rem 1rem 1rem 1rem;
-}
-
-.redes {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: redes;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 1rem 1rem 1rem 1rem;
-}
-
-.redesHijos img {
-  padding: 5px;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  width: 5vw;
-  height: 9vh;
-}
-
-.logoClutch img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 5vw;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 5px;
-  margin: 1rem 1rem 1rem 1rem;
-}
-
 .fotoPadre {
   display: -ms-grid;
   display: grid;
@@ -412,13 +424,16 @@ h4 {
   height: 65vh;
 }
 
-.fotoPadre .pieDeFoto {
+.fotoPadre {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .gif {
