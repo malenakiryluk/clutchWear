@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Plus+Jakarta+Sans&display=swap');
 @import "generales";
+@import "operaciones";
 
 
 *{
@@ -15,12 +16,6 @@
 }
 
 
-
-main{
-    background-color: rgb(107, 107, 107);
-    font-family: 'Open Sans', sans-serif;
-    color: black;
-}
 .margin{
     margin: 1rem;
 }

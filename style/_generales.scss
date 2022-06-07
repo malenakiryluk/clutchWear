@@ -1,5 +1,5 @@
 $imagen: url(../imagenes/fondoNaranja.png);
-
+$color: rgb(107, 107, 107);
 
 header{
     display: flex;
@@ -38,6 +38,16 @@ header{
         }
     }
 }
+main{
+    background-color: $color;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+}
+
+
+.back{
+    background-image: $imagen;
+}
 
 footer{
     background-image:$imagen;
@@ -45,6 +55,7 @@ footer{
     margin-bottom:0 ;
     color:black ;
 }
+
 
 .footer{
     display: grid;
@@ -79,12 +90,12 @@ footer{
 }
 
 .redesHijos {
+    display: flex;
     
     img{
-    padding: 5px;
-    justify-content: space-evenly;
-    width: 5vw;
-    height: 9vh;
+        display: flex;
+        padding: 5px;
+        justify-content: center;
     }
 }
 

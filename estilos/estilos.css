@@ -47,6 +47,16 @@ header nav ul li a {
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
+main {
+  background-color: #6b6b6b;
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+}
+
+.back {
+  background-image: url(../imagenes/fondoNaranja.png);
+}
+
 footer {
   background-image: url(../imagenes/fondoNaranja.png);
   font-family: 'Plus Jakarta Sans', sans-serif;
@@ -112,13 +122,20 @@ footer {
   margin: 1rem 1rem 1rem 1rem;
 }
 
+.redesHijos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .redesHijos img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 5px;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  width: 5vw;
-  height: 9vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .logoClutch img {
@@ -140,6 +157,51 @@ footer {
   background-image: url(../imagenes/fondoNaranja.png);
 }
 
+/*maps*/
+.btn-nike {
+  background-image: url("../imagenes/nikeLogo.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.btn-adidas {
+  background-image: url("../imagenes/adidasLogo.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.btn-puma {
+  background-image: url("../imagenes/pumaLogo.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/*mixins*/
+.btn-nike {
+  height: 3rem;
+  width: 5rem;
+}
+
+.btn-adidas {
+  height: 3rem;
+  width: 5rem;
+}
+
+.btn-puma {
+  height: 3rem;
+  width: 5rem;
+}
+
+.redesHijos img {
+  height: 9vh;
+  width: 5vw;
+}
+
+/*extend*/
+.border, .btn-nike, .btn-adidas, .btn-puma, .redesHijos {
+  border: none;
+}
+
 * {
   padding: 0%;
   margin: 0%;
@@ -148,12 +210,6 @@ footer {
 .navBar {
   margin: 0rem;
   padding: 0rem;
-}
-
-main {
-  background-color: #6b6b6b;
-  font-family: 'Open Sans', sans-serif;
-  color: black;
 }
 
 .margin {

@@ -1,0 +1,59 @@
+
+/*maps*/
+
+$marcas: (
+    nike: url('../imagenes/nikeLogo.jpg'),
+    adidas:url('../imagenes/adidasLogo.jpg'),
+    puma: url('../imagenes/pumaLogo.jpg')
+);
+
+@each $brand,$fondo in $marcas {
+    .btn-#{$brand}{
+        background-image: $fondo;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+/*mixins*/
+@mixin size($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+.btn-nike{
+    @include size (5rem, 3rem)
+}
+.btn-adidas{
+    @include size (5rem, 3rem)
+}
+.btn-puma{
+    @include size (5rem, 3rem)
+}
+
+.redesHijos{
+    img{
+        @include size(5vw, 9vh)
+    }
+}
+
+
+/*extend*/
+.border{
+    border: none;
+}
+.btn-nike{
+    @extend.border
+}
+.btn-adidas{
+    @extend.border
+}
+.btn-puma{
+    @extend.border
+}
+.redesHijos{
+    @extend.border
+}
+
+
+
