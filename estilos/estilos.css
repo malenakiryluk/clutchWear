@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Plus+Jakarta+Sans&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -200,11 +205,6 @@ footer {
 /*extend*/
 .border, .btn-nike, .btn-adidas, .btn-puma, .redesHijos {
   border: none;
-}
-
-* {
-  padding: 0%;
-  margin: 0%;
 }
 
 .navBar {
@@ -492,17 +492,6 @@ h4 {
           align-items: center;
 }
 
-.gif {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 @media (max-width: 750px) {
   .grilla {
     display: -ms-grid;
@@ -551,6 +540,9 @@ h4 {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         grid-template-areas: "contacto"  "marcas" "redes";
+  }
+  .foto {
+    margin-left: 230px;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
