@@ -53,9 +53,9 @@ header nav ul li a {
 }
 
 main {
-  background-color: #6b6b6b;
+  background-color: #363636;
   font-family: 'Open Sans', sans-serif;
-  color: black;
+  color: white;
 }
 
 .back {
@@ -444,7 +444,32 @@ h4 {
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
-        grid-template-areas: "subtitulo" "foto" "foto";
+        grid-template-areas: "subtitulo" "foto";
+  }
+  .fotoPadre {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: "fotoUno" "fotoDos";
+  }
+  .fotoUno {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: fotoUno;
+  }
+  .fotoUno img {
+    margin-left: 200px;
+  }
+  .fotoDos {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: fotoDos;
+  }
+  .fotoDos img {
+    margin-left: 200px;
   }
   .galeriaInd {
     display: -ms-grid;
@@ -482,6 +507,9 @@ h4 {
   }
   .logoClutch {
     padding: 2px;
+  }
+  .redesTx {
+    display: none;
   }
 }
 

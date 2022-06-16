@@ -181,8 +181,29 @@ h4{
         grid-template-rows: 1fr;
         grid-template-areas:
         "subtitulo"
-        "foto"
         "foto";
+    }
+
+    .fotoPadre{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas:
+        "fotoUno"
+        "fotoDos";
+    }
+
+    .fotoUno{
+        grid-area: fotoUno;
+        img{
+            margin-left: 200px;
+        }
+    }
+    .fotoDos{
+        grid-area: fotoDos;
+        img{
+            margin-left: 200px;
+        }
     }
 
     .galeriaInd{
@@ -228,6 +249,9 @@ h4{
 
     .logoClutch{
         padding: 2px;
+    }
+    .redesTx{
+        display: none;
     }
 }
 
