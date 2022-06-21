@@ -47,7 +47,7 @@ h4{
 }
 
 .pieDeFoto{
-    font-size: 30px;
+    font-size: 20px;
     padding: 20px;    
 }
 
@@ -55,6 +55,7 @@ h4{
     transform: scale(1.2);
     transition: all 1s;
 }
+
 
 
 
@@ -144,17 +145,61 @@ h4{
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 10%;
     padding: 10px;
+    border-radius: 10px;
 
-    img{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 40vw;
-        height: 65vh;
-        border-radius: 10px;
+    .fotoUno{
+        border-radius: 15px;
+        background-color: rgb(37, 37, 37);
+        margin: 3rem;
+
+        img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            width: 25vw;
+            height: 40vh;
+        }
+        p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .pieDeFoto{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 0;
+        }
     }
+
+    .fotoDos{
+        border-radius: 15px;
+        background-color: rgb(37, 37, 37);
+        margin: 3rem;
+
+        img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            width: 25vw;
+            height: 40vh;
+        }
+        p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .pieDeFoto{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    
+    
 }
 
 

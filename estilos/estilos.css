@@ -58,6 +58,22 @@ main {
   color: white;
 }
 
+p {
+  font-size: 2rem;
+}
+
+h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .back {
   background-image: url(../imagenes/fondoNaranja.png);
 }
@@ -255,7 +271,7 @@ h4 {
 }
 
 .pieDeFoto {
-  font-size: 30px;
+  font-size: 20px;
   padding: 20px;
 }
 
@@ -407,12 +423,17 @@ h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-column-gap: 10%;
-          column-gap: 10%;
   padding: 10px;
+  border-radius: 10px;
 }
 
-.fotoPadre img {
+.fotoPadre .fotoUno {
+  border-radius: 15px;
+  background-color: #252525;
+  margin: 3rem;
+}
+
+.fotoPadre .fotoUno img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -422,9 +443,79 @@ h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 40vw;
-  height: 65vh;
   border-radius: 10px;
+  width: 25vw;
+  height: 40vh;
+}
+
+.fotoPadre .fotoUno p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fotoPadre .fotoUno .pieDeFoto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 0;
+}
+
+.fotoPadre .fotoDos {
+  border-radius: 15px;
+  background-color: #252525;
+  margin: 3rem;
+}
+
+.fotoPadre .fotoDos img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  width: 25vw;
+  height: 40vh;
+}
+
+.fotoPadre .fotoDos p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fotoPadre .fotoDos .pieDeFoto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 750px) {
