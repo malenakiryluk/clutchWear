@@ -63,6 +63,7 @@ p {
 }
 
 h1 {
+  font-size: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,6 +73,15 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+h4 {
+  padding: 5px;
+}
+
+h3 {
+  font-size: 1rem;
+  margin: 1rem;
 }
 
 .back {
@@ -230,14 +240,6 @@ footer {
 
 .margin {
   margin: 1rem;
-}
-
-h1 {
-  font-size: 80px;
-}
-
-h4 {
-  padding: 5px;
 }
 
 #presentacion {
