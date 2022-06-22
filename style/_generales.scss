@@ -49,6 +49,19 @@ main{
     font-family: 'Open Sans', sans-serif;
     color: white;
 }
+.precentation{
+
+    h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 p{
     font-size: 2rem;
