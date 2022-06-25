@@ -191,6 +191,7 @@
 
 
 
+
 @media(max-width:750px){
 
     .grilla{
@@ -253,6 +254,7 @@
 
         margin-left: 110px;
         width: 500px;
+        
     }
 
     .fotoUno{
@@ -268,6 +270,18 @@
             width: 30vw;
             margin-left: 100px;
         }
+    }
+    #zapatilla{
+        width: 45vw;
+        margin-left: 25px;
+    }
+
+    h1{
+        padding: 10px;
+        font-size: 60px;
+    }
+    p{
+        font-size: 40px;
     }
 
     .footer{
