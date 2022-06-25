@@ -21,12 +21,13 @@ header{
     position: sticky;
     top: 0;
 
-    height: 60px;
+    height: 68px;
 
     nav{
         display: flex;
         justify-content: center; 
         align-items: center;
+        height: 60px;
 
         ul{
             display: flex;
@@ -43,6 +44,11 @@ header{
             }
         }
     }
+}
+.navBar{
+    margin: 0rem;
+    padding: 0rem;
+   
 }
 main{
     background-color: $color;
@@ -139,11 +145,10 @@ footer{
 
 .logoClutch img{
     display: flex;
-    width: 5vw;
+    width: 4vw;
     justify-content: center;
     align-items: center;
-    padding: 5px;
-    margin: 1rem 1rem 1rem 1rem;
+    
 }
 
 
