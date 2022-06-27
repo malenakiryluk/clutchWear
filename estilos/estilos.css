@@ -633,6 +633,12 @@ footer {
   .redesTx {
     display: none;
   }
+  #presentacion {
+    font-size: 25px;
+  }
+  p {
+    font-size: 30px;
+  }
 }
 
 @media (min-width: 750px) and (max-width: 980px) {
@@ -710,6 +716,12 @@ footer {
   }
   .logoClutch {
     padding: 2px;
+  }
+  .navBar {
+    height: 50px;
+  }
+  h1 {
+    font-size: 60px;
   }
 }
 
