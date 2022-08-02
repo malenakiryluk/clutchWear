@@ -11,6 +11,10 @@
 }
 
 
+.block{
+    display:  none;
+}
+
 #presentacion{
     font-size: 30px;
     margin: 20px 10px 20px 10px
@@ -32,10 +36,7 @@
     margin: 10px 10px 5px 10px ;
 }
 
-.pieDeFoto{
-    font-size: 20px;
-    padding: 20px;    
-}
+
 
 .transition:hover{
     transform: scale(1.2);

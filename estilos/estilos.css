@@ -116,6 +116,11 @@ h3 {
   margin: 1rem;
 }
 
+.pieDeFoto {
+  font-size: 20px;
+  padding: 20px;
+}
+
 .back {
   background-image: url(../imagenes/fondoNaranja.png);
 }
@@ -267,6 +272,10 @@ footer {
   margin: 1rem;
 }
 
+.block {
+  display: none;
+}
+
 #presentacion {
   font-size: 30px;
   margin: 20px 10px 20px 10px;
@@ -295,11 +304,6 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   margin: 10px 10px 5px 10px;
-}
-
-.pieDeFoto {
-  font-size: 20px;
-  padding: 20px;
 }
 
 .transition:hover {
