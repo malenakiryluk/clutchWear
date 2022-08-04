@@ -14,10 +14,12 @@ const zapatilla2 = new Producto ("zapatilla", "kyrie 5 bob esponja", "amarillo",
 
 const productos = [remera, remera2, short, short2, zapatilla, zapatilla2];
 
-const categoria = prompt("Hola bienvendioa clutchwear, que esta buscando?")
-const remeras = document.querySelector("#remeras")
-const shorts = document.querySelector("#shorts")
-const zapatillas = document.querySelector("#zapatillas")
+const form = document.forms;
+const inputCategoria = document.querySelector(".categoria");
+const remeras = document.querySelector("#remeras");
+const shorts = document.querySelector("#shorts");
+const zapatillas = document.querySelector("#zapatillas");
+console.log(remeras, shorts, zapatillas)
 
 const catProducto = (productos, categoria) => {
 
@@ -58,4 +60,4 @@ const catProducto = (productos, categoria) => {
     }
 }
 
-catProducto(productos, categoria);
+catProducto(productos, inputCategoria);

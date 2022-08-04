@@ -17,33 +17,41 @@
 
         <header class="header">
 
-            <nav class="navbar navbar-expand-lg navbar-light backGround navBar">
-                <div class="container-fluid backGround navBar">
-                  <a class="navbar-brand logoClutch" href="#"><img src="./imagenes/logoClutch.jpg" alt="logo clutch"></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./index.html">inicio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="./secciones/indumentaria.html">indumentaria</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="./secciones/protecciones.html">protecciones</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="./secciones/ofertas.html">ofertas</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="./secciones/nosotros.html">nosotros</a>
-                      </li>
+          <nav class="navbar navbar-expand-lg navbar-light bg-light backGround navBar">
+            <div class="container-fluid backGround navBar">
+              <a class="navbar-brand logoClutch" href="#"><img src="./imagenes/logoClutch.jpg" alt="logo clutch"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Secciones
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="./secciones/indumentaria.html">Indumentaria</a></li>
+                      <li><a class="dropdown-item" href="./secciones/protecciones.html">Protecciones</a></li>
+                      <li><a class="dropdown-item" href="./secciones/ofertas.html">Ofertas</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="./secciones/nosotros.html">Nosotros</a></li>
                     </ul>
-                  </div>
-                </div>
-              </nav>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2 categoria" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
 
         </header>
 
@@ -81,6 +89,71 @@
                 
 
             </section>
+
+
+
+
+            <section id="remeras" class="galeria galeriaInd block" >
+                
+              <h2 class="subtitulo">Remeras:</h2>
+
+              <div class="fotoPadre">
+                  <div class="fotoUno">
+                      <img class="foto" src="./imagenes/camisetaChicago.jpg" alt="remera chicago bulls">
+                      <figcaption class="pieDeFoto">Remera chicago bulls original de jordan </figcaption>
+                      <p>$15.000</p>
+                  </div>
+
+                  <div class="fotoDos">
+                      <img class="foto" src="./imagenes/remeraRaptors.jpg" alt="remera de los raptors">
+                      <figcaption class="pieDeFoto">Remera retro toronto raptors de vince carter</figcaption>
+                      <p>$17.000</p>
+                  </div>
+              </div>
+          
+          </section>
+
+          <section id="shorts" class="galeria galeriaInd block">
+
+              <h2 class="subtitulo">Shorts:</h2>
+
+              <div class="fotoPadre">
+                  <div class="fotoUno">
+                      <img class="foto" src="./imagenes/shortArgentina.jpg" alt="short de argentina">
+                      <figcaption class="pieDeFoto">Short original de la seleccion argentina</figcaption>
+                      <p>$12.000</p>
+                  </div>
+
+                  <div class="fotoDos">
+                      <img class="foto" src="./imagenes/shortNuggets.jpg" alt="short de denver nuggets">
+                      <figcaption class="pieDeFoto">Short original de los denver nuggets</figcaption>
+                      <p>$13.000</p>
+                  </div>
+              </div>
+
+          </section>
+
+          <section id= "zapatillas" class="galeria galeriaInd block">
+
+              <h2 class="subtitulo">Zapatillas:</h2>
+
+              <div class="fotoPadre">
+                  <div class="fotoUno">
+                      <img class="foto" src="./imagenes/zapatillaJordan.png" alt="zapatillas jordan">
+                      <figcaption class="pieDeFoto">Zapatillas nike jordan 1 low travis scott</figcaption>
+                      <p>$40.000</p>
+                  </div>
+
+                  <div class="fotoDos">
+
+                      <img class="foto" id="zapatilla" src="./imagenes/zapatillasKyrie.jpg" alt="zapatillas kyrie">
+                      <figcaption class="pieDeFoto">Zapatillas kyrie 5 edicion bob esponja</figcaption>
+                      <p>$35.000</p>
+
+                  </div>
+              </div>
+
+          </section>
 
 
                 
