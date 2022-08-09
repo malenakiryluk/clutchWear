@@ -47,6 +47,67 @@ header{
         }
     }
 }
+
+.oscuro{
+    
+   header{
+
+    background-color:rgb(37, 37, 37) ;
+    background-image: none;
+    .navBar{
+        background-color: $color;
+       ul{
+           li{
+            color: white;
+            }
+        }
+    }
+    nav{
+        background-color: rgb(37, 37, 37);
+        background-image: none;
+        color: white;
+        ul{
+            background-color: $color;
+            li{
+                background-color: $color;
+                color: white;
+            }
+        }
+    }
+
+   } 
+
+    main{
+        background-color: black;
+        color: white;
+    }
+
+    .footer{
+        background-color: rgb(37, 37, 37);
+        background-image: none;
+        color: white;
+    }
+    .backGround{
+        background-image: none;
+    }
+}
+
+.boton{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 3px;
+    background-color: $color;
+    border-color: $color;
+}
+
+.margin {
+    margin: 4px;
+}
+.color{
+    background-color: $color;
+    border-color: $color;
+}
 .navBar{
     margin: 0rem;
     padding: 0rem;

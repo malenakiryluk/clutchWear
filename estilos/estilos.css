@@ -54,6 +54,73 @@ header nav ul li a {
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
+.oscuro header {
+  background-color: #252525;
+  background-image: none;
+}
+
+.oscuro header .navBar {
+  background-color: #363636;
+}
+
+.oscuro header .navBar ul li {
+  color: white;
+}
+
+.oscuro header nav {
+  background-color: #252525;
+  background-image: none;
+  color: white;
+}
+
+.oscuro header nav ul {
+  background-color: #363636;
+}
+
+.oscuro header nav ul li {
+  background-color: #363636;
+  color: white;
+}
+
+.oscuro main {
+  background-color: black;
+  color: white;
+}
+
+.oscuro .footer {
+  background-color: #252525;
+  background-image: none;
+  color: white;
+}
+
+.oscuro .backGround {
+  background-image: none;
+}
+
+.boton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3px;
+  background-color: #363636;
+  border-color: #363636;
+}
+
+.margin {
+  margin: 4px;
+}
+
+.color {
+  background-color: #363636;
+  border-color: #363636;
+}
+
 .navBar {
   margin: 0rem;
   padding: 0rem;
@@ -532,10 +599,6 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.block {
-  display: block;
 }
 
 @media (max-width: 750px) {

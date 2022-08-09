@@ -14,50 +14,104 @@ const zapatilla2 = new Producto ("zapatilla", "kyrie 5 bob esponja", "amarillo",
 
 const productos = [remera, remera2, short, short2, zapatilla, zapatilla2];
 
-const form = document.forms;
+const form = document.querySelector(".form");
 const inputCategoria = document.querySelector(".categoria");
 const remeras = document.querySelector("#remeras");
 const shorts = document.querySelector("#shorts");
 const zapatillas = document.querySelector("#zapatillas");
-console.log(remeras, shorts, zapatillas)
+const body = document.querySelector("body")
+const modoOscuro = document.querySelector("#modoOscuro");
 
-const catProducto = (productos, categoria) => {
+console.log(remeras, shorts, zapatillas, form)
 
-    if(categoria === "remeras"){
-        const remeras = productos.filter( (elemento) => {
-            return elemento.categoria === "remera"
-        })
-        
-        shorts.classList.toggle("block")
-        zapatillas.classList.toggle("block")
-        console.log(remeras)
+form.onsubmit = (event) => {
+    event.preventDefault()
+    if (inputCategoria.value === "remeras"){
+        remeras.innerHTML = `<h2 class="subtitulo">Remeras:</h2>
 
+        <div class="fotoPadre">
+            <div class="fotoUno">
+                <img class="foto" src="./imagenes/camisetaChicago.jpg" alt="remera chicago bulls">
+                <figcaption class="pieDeFoto">Remera chicago bulls original de jordan </figcaption>
+                <p>$15.000</p>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <button class="btn btn-primary color margin" type="button">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="fotoDos">
+                <img class="foto" src="./imagenes/remeraRaptors.jpg" alt="remera de los raptors">
+                <figcaption class="pieDeFoto">Remera retro toronto raptors de vince carter</figcaption>
+                <p>$17.000</p>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <button class="btn btn-primary color margin" type="button">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>`
     }
-    else if(categoria === "shorts"){
-        const shorts = productos.filter( (elemento) => {
-            return elemento.categoria === "short"
-        })
+    else if (inputCategoria.value === "shorts"){
+        shorts.innerHTML = `<h2 class="subtitulo">Shorts:</h2>
 
-        remeras.classList.toggle("block")
-        zapatillas.classList.toggle("block")
-        console.log(shorts)
+        <div class="fotoPadre">
+            <div class="fotoUno">
+                <img class="foto" src="./imagenes/shortArgentina.jpg" alt="short de argentina">
+                <figcaption class="pieDeFoto">Short original de la seleccion argentina</figcaption>
+                <p>$12.000</p>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <button class="btn btn-primary color margin" type="button">Agregar al carrito</button>
+                </div>
+            </div>
 
-        
+            <div class="fotoDos">
+                <img class="foto" src="./imagenes/shortNuggets.jpg" alt="short de denver nuggets">
+                <figcaption class="pieDeFoto">Short original de los denver nuggets</figcaption>
+                <p>$13.000</p>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <button class="btn btn-primary color margin" type="button">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>`
     }
-    else if(categoria === "zapatillas"){
-        const zapatillas = productos.filter( (elemento) => {
-            return elemento.categoria === "zapatilla"
-        })
+    else if(inputCategoria.value === "zapatillas"){
+        zapatillas.innerHTML = `<h2 class="subtitulo">Zapatillas:</h2>
 
-        remeras.classList.toggle("block")
-        shorts.classList.toggle("block")
-        console.log(zapatillas)
+        <div class="fotoPadre">
+            <div class="fotoUno">
+                <img class="foto" src="./imagenes/zapatillaJordan.png" alt="zapatillas jordan">
+                <figcaption class="pieDeFoto">Zapatillas nike jordan 1 low travis scott</figcaption>
+                <p>$40.000</p>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <button class="btn btn-primary color margin" type="button">Agregar al carrito</button>
+                </div>
+                
+            </div>
 
-        
-    }
-    else{
-        console.log("no contamos con ese producto :(")
+            <div class="fotoDos">
+
+                <img class="foto" id="zapatilla" src="./imagenes/zapatillasKyrie.jpg" alt="zapatillas kyrie">
+                <figcaption class="pieDeFoto">Zapatillas kyrie 5 edicion bob esponja</figcaption>
+                <p>$35.000</p>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <button class="btn btn-primary color margin" type="button">Agregar al carrito</button>
+                </div>
+
+            </div>
+        </div>`
+
     }
 }
 
-catProducto(productos, inputCategoria);
+modoOscuro.addEventListener("click", () =>{
+
+    body.classList.toggle("oscuro")
+
+    if(body.classList.contains("oscuro")){
+
+        modoOscuro.textContent = "Modo claro"
+
+    }
+    else{
+        modoOscuro.textContent = "Modo oscuro"
+    }
+})
+
