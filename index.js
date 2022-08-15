@@ -101,17 +101,40 @@ form.onsubmit = (event) => {
     }
 }
 
-modoOscuro.addEventListener("click", () =>{
 
-    body.classList.toggle("oscuro")
+
+let oscuro
+ 
+modoOscuro.addEventListener("click", (oscuro) =>{
+
+
+    body.classList.toggle("oscuro") 
 
     if(body.classList.contains("oscuro")){
-
         modoOscuro.textContent = "Modo claro"
-
+        oscuro = true;
+        const modoOscuroJason = JSON.stringify(oscuro)
+        localStorage.setItem("modoOscuro", modoOscuroJason);
+    
     }
     else{
         modoOscuro.textContent = "Modo oscuro"
+        oscuro = false;
+        const modoOscuroJason = JSON.stringify(oscuro)
+        localStorage.setItem("modoOscuro", modoOscuroJason);
     }
+    
 })
+
+
+
+const getModoOscuro = localStorage.getItem("modoOscuro")
+const modoOscuroParseado = JSON.parse(getModoOscuro)
+
+if(modoOscuroParseado === true){
+    body.classList.toggle("oscuro")
+}
+
+
+
 
