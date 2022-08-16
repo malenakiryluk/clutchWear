@@ -60,25 +60,10 @@ header nav ul li a {
 }
 
 .oscuro header .navBar {
-  background-color: #363636;
+  background-color: #252525;
 }
 
 .oscuro header .navBar ul li {
-  color: white;
-}
-
-.oscuro header nav {
-  background-color: #252525;
-  background-image: none;
-  color: white;
-}
-
-.oscuro header nav ul {
-  background-color: #363636;
-}
-
-.oscuro header nav ul li {
-  background-color: #363636;
   color: white;
 }
 
@@ -95,6 +80,11 @@ header nav ul li a {
 
 .oscuro .backGround {
   background-image: none;
+}
+
+.oscuro .redesHijos {
+  background-image: none;
+  background-color: #252525;
 }
 
 .boton {

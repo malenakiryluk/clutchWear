@@ -55,25 +55,14 @@ header{
     background-color:rgb(37, 37, 37) ;
     background-image: none;
     .navBar{
-        background-color: $color;
+        background-color: rgb(37, 37, 37);
        ul{
            li{
             color: white;
-            }
+           }
         }
     }
-    nav{
-        background-color: rgb(37, 37, 37);
-        background-image: none;
-        color: white;
-        ul{
-            background-color: $color;
-            li{
-                background-color: $color;
-                color: white;
-            }
-        }
-    }
+    
 
    } 
 
