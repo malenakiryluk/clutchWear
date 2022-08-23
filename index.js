@@ -137,4 +137,44 @@ if(modoOscuroParseado === true){
 
 
 
+// fetch
+
+const btnEnvio = document.querySelector(".btnEnvio")
+
+btnEnvio.addEventListener('click',()=>{
+    event.preventDefault()
+    Swal.fire({
+      title: 'Los datos fueron enviados con exito, muchas gracias',
+      width: 600,
+      padding: '3em',
+      color: '#716add',
+     
+    })
+  })
+
+
+
+let usuario = {
+    id: 155,
+    title: "prueba",
+    body: "post de prueba",
+}
+
+const envio = () =>{
+  fetch("https://jsonplaceholder.typicode.com/posts",{
+    method : "POST",
+    header:{'content-type':'application/json; charset=UTF-8'},
+    body: JSON.stringify(usuario)
+  })
+      .then(response =>response.json())
+      .then(result => console.log(result))
+
+}
+
+envio.onclick = ()=>{
+  finCompra();
+}
+
+
+
 
