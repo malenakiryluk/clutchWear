@@ -59,7 +59,19 @@
 
         </header>
 
-        <main class="principal"> 
+        <main class="principal "> 
+
+          <button class="btn btn-primary carrito-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"> <img class="ftCarrito" src="./imagenes/carrito.png" alt="foto carrito" > </button>
+
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body carritoContent">
+              ...
+            </div>
+          </div>
                 
             <section class="precentation">
 
@@ -77,21 +89,21 @@
                 
                 <div class="fotoPadre">
 
-                    <div class="fotoUno">
+                    <div class="fotoUno item">
                         <img src="./imagenes/zapatillaJordan.png" class="img-fluid foto" alt="zapatillas jordan 1 low travis scott">
                         <figcaption class="pieDeFoto">Zapatillas nike jordan 1 low travis scott</figcaption>
                         <p>$40.000</p>
                         <div class="d-grid gap-2 col-6 mx-auto">
-                          <button class="btn btn-primary color margin" type="button">Agregar al carrito</button>
+                          <button class="btn btn-primary color margin addCarrito" type="button">Agregar al carrito</button>
                         </div>
                     </div>
 
-                    <div class="fotoDos">
+                    <div class="fotoDos item">
                         <img src="./imagenes/camisetaChicago.jpg" class="img-fluid foto" alt="camiseta de chicago bulls">
                         <figcaption class="pieDeFoto">Camiseta de chicago bulls jordan</figcaption>
                         <p>$15.000</p>  
                         <div class="d-grid gap-2 col-6 mx-auto">
-                          <button class="btn btn-primary color margin" type="button">Agregar al carrito</button>
+                          <button class="btn btn-primary color margin addCarrito" type="button">Agregar al carrito</button>
                         </div>
                     </div>  
                 </div>

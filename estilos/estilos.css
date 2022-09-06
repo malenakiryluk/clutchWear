@@ -54,6 +54,10 @@ header nav ul li a {
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
+.carritoColor {
+  color: black;
+}
+
 .oscuro header {
   background-color: #252525;
   background-image: none;
@@ -395,6 +399,20 @@ footer {
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: footer;
+}
+
+.carrito-btn {
+  border-color: #252525;
+  margin: 10px;
+  margin-top: 10px;
+  background-image: url(../imagenes/fondoNaranja.png);
+  height: 80px;
+  width: 140px;
+}
+
+.ftCarrito {
+  height: 70px;
+  width: 70px;
 }
 
 .galeria {
