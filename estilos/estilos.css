@@ -13,7 +13,7 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   background-image: url(../imagenes/fondoNaranja.png);
-  color: black;
+  color: white;
   font-family: 'Plus Jakarta Sans', sans-serif;
   margin-top: 0;
   position: -webkit-sticky;
@@ -46,7 +46,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color: black;
+  color: white;
   text-decoration: none;
   margin-right: 1rem;
   margin-left: 5px;
@@ -58,6 +58,14 @@ header nav ul li a {
   color: black;
 }
 
+.oscuro .navbar-light .navbar-nav .nav-link {
+  color: white;
+}
+
+.oscuro .dropdown-item {
+  color: #252525;
+}
+
 .oscuro header {
   background-color: #252525;
   background-image: none;
@@ -65,10 +73,6 @@ header nav ul li a {
 
 .oscuro header .navBar {
   background-color: #252525;
-}
-
-.oscuro header .navBar ul li {
-  color: white;
 }
 
 .oscuro main {
@@ -191,6 +195,7 @@ footer {
   font-family: 'Plus Jakarta Sans', sans-serif;
   margin-bottom: 0;
   color: black;
+  margin-bottom: 0;
 }
 
 .footer {
@@ -331,6 +336,16 @@ footer {
 
 .margin {
   margin: 1rem;
+}
+
+.btnCompra {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: #252525;
+  width: 20px;
+  margin-bottom: 3px;
 }
 
 #presentacion {

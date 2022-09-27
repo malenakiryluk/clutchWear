@@ -14,7 +14,7 @@ header{
 
     background-image: $imagen;
     
-    color: black;
+    color: white;
     font-family: 'Plus Jakarta Sans', sans-serif;
 
 
@@ -36,7 +36,7 @@ header{
                 display: inline-block;
 
                 a{
-                    color: black;
+                    color: white;
                     text-decoration: none;
                     margin-right: 1rem;
                     margin-left: 5px;
@@ -53,22 +53,26 @@ header{
 }
 
 .oscuro{
-    
-   header{
 
-    background-color:rgb(37, 37, 37) ;
-    background-image: none;
-    .navBar{
-        background-color: rgb(37, 37, 37);
-       ul{
-           li{
-            color: white;
-           }
-        }
+    .navbar-light .navbar-nav .nav-link {
+        color: white;
     }
     
+    .dropdown-item{
+        color: rgb(37, 37, 37);
+    }
+    
+    header{
 
-   } 
+        background-color:rgb(37, 37, 37) ;
+        background-image: none;
+        .navBar{
+            background-color: rgb(37, 37, 37);       
+        }
+    
+
+    } 
+
 
     main{
         background-color: black;
@@ -163,6 +167,8 @@ footer{
     font-family: 'Plus Jakarta Sans', sans-serif;
     margin-bottom:0 ;
     color:black ;
+
+    margin-bottom: 0;
 }
 
 

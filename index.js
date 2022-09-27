@@ -139,9 +139,10 @@ if(modoOscuroParseado === true){
 
 // fetch
 
-const btnEnvio = document.querySelector(".btnEnvio")
+let btnCompra = document.querySelector(".btnFinalizarCompra")
+let formulario = document.querySelector(".formulario");
 
-btnEnvio.addEventListener('click',()=>{
+btnCompra.addEventListener('click',()=>{
     event.preventDefault()
     Swal.fire({
       title: 'Los datos fueron enviados con exito, muchas gracias',
@@ -150,11 +151,31 @@ btnEnvio.addEventListener('click',()=>{
       color: '#716add',
      
     })
+})
+
+
+
+
+
+formulario.addEventListener('submit',function(e){
+  e.preventDefault();
+
+  let datos = new FormData(formulario)
+
+  console.log(datos.get('name'))
+  console.log(datos.get('email'))
+  console.log(datos.get('phone'))
+
+  fetch("https://jsonplaceholder.typicode.com/users",{
+    method : "POST",
+    header:{'content-type':'application/json; charset=UTF-8'},
+    body: JSON.stringify(datos)
   })
+      .then(response =>response.json())
+      .then(result => console.log(result))
+})
 
-
-
-let usuario = {
+/*let usuario = {
     id: 155,
     title: "prueba",
     body: "post de prueba",
@@ -173,7 +194,7 @@ const envio = () =>{
 
 envio.onclick = ()=>{
   finCompra();
-}
+}*/
 
 
 // CARRITO
