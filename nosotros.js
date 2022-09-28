@@ -3,7 +3,6 @@
 let btnCompra = document.querySelector(".btnFinalizarCompra")
 let formulario = document.querySelector(".formulario");
 
-console.log(formulario, btnCompra)
 
 btnCompra.addEventListener('click',()=>{
     event.preventDefault()

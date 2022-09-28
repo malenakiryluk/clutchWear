@@ -8,7 +8,7 @@ const zapatillas = document.querySelector("#zapatillas");
 const body = document.querySelector("body")
 const modoOscuro = document.querySelector("#modoOscuro");
 
-console.log(remeras, shorts, zapatillas, form)
+
 
 form.onsubmit = (event) => {
     event.preventDefault()
@@ -127,7 +127,6 @@ if(modoOscuroParseado === true){
 
 const agregarCarritoBtn = document.querySelectorAll(".addCarrito")
 const carritoContent = document.querySelector(".carritoContent")
-console.log( agregarCarritoBtn, carritoContent)
 const itemConteiner = document.querySelector(".itemConteiner")
 
 agregarCarritoBtn.forEach( agregarBtn => {
