@@ -1,18 +1,4 @@
-function Producto (categoria, nombre, color, precio){
-    this.categoria = categoria
-    this.nombre = nombre;
-    this.color = color;
-    this.precio = Number(precio);
-}
 
-const remera = new Producto ("remera", "remera chicago bulls", "rojo", "15000")
-const remera2 = new Producto ("remera", "remera toronto raptors", "blanco", "17000")
-const short = new Producto ("short","short denver nuggets", "azul", "13000")
-const short2 = new Producto ("short","short selccion argentina", "celeste", "12000")
-const zapatilla = new Producto ("zapatilla", "jordan 1 travis scott", "marron", "40000")
-const zapatilla2 = new Producto ("zapatilla", "kyrie 5 bob esponja", "amarillo", "35000")
-
-const productos = [remera, remera2, short, short2, zapatilla, zapatilla2];
 
 const form = document.querySelector(".form");
 const inputCategoria = document.querySelector(".categoria");
@@ -137,69 +123,7 @@ if(modoOscuroParseado === true){
 
 
 
-// fetch
 
-/*let btnCompra = document.querySelector(".btnFinalizarCompra")
-let formulario = document.querySelector(".formulario");
-
-console.log(formulario, btnCompra)
-
-btnCompra.addEventListener('click',()=>{
-    event.preventDefault()
-    Swal.fire({
-      title: 'Los datos fueron enviados con exito, muchas gracias',
-      width: 600,
-      padding: '3em',
-      color: '#716add',
-     
-    })
-})
-
-
-
-
-
-formulario.addEventListener('submit',function(e){
-  e.preventDefault();
-
-  let datos = new FormData(formulario)
-
-  console.log(datos.get('name'))
-  console.log(datos.get('email'))
-  console.log(datos.get('phone'))
-
-  fetch("https://jsonplaceholder.typicode.com/users",{
-    method : "POST",
-    header:{'content-type':'application/json; charset=UTF-8'},
-    body: JSON.stringify(datos)
-  })
-      .then(response =>response.json())
-      .then(result => console.log(result))
-})*/
-
-/*let usuario = {
-    id: 155,
-    title: "prueba",
-    body: "post de prueba",
-}
-
-const envio = () =>{
-  fetch("https://jsonplaceholder.typicode.com/posts",{
-    method : "POST",
-    header:{'content-type':'application/json; charset=UTF-8'},
-    body: JSON.stringify(usuario)
-  })
-      .then(response =>response.json())
-      .then(result => console.log(result))
-
-}
-
-envio.onclick = ()=>{
-  finCompra();
-}*/
-
-
-// CARRITO
 
 const agregarCarritoBtn = document.querySelectorAll(".addCarrito")
 const carritoContent = document.querySelector(".carritoContent")

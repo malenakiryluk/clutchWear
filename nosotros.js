@@ -1,4 +1,4 @@
-// fetch
+
 
 let btnCompra = document.querySelector(".btnFinalizarCompra")
 let formulario = document.querySelector(".formulario");
@@ -37,24 +37,3 @@ formulario.addEventListener('submit',function(e){
       .then(response =>response.json())
       .then(result => console.log(result))
 })
-
-/*let usuario = {
-    id: 155,
-    title: "prueba",
-    body: "post de prueba",
-}
-
-const envio = () =>{
-  fetch("https://jsonplaceholder.typicode.com/posts",{
-    method : "POST",
-    header:{'content-type':'application/json; charset=UTF-8'},
-    body: JSON.stringify(usuario)
-  })
-      .then(response =>response.json())
-      .then(result => console.log(result))
-
-}
-
-envio.onclick = ()=>{
-  finCompra();
-}*/
