@@ -139,8 +139,10 @@ if(modoOscuroParseado === true){
 
 // fetch
 
-let btnCompra = document.querySelector(".btnFinalizarCompra")
+/*let btnCompra = document.querySelector(".btnFinalizarCompra")
 let formulario = document.querySelector(".formulario");
+
+console.log(formulario, btnCompra)
 
 btnCompra.addEventListener('click',()=>{
     event.preventDefault()
@@ -173,7 +175,7 @@ formulario.addEventListener('submit',function(e){
   })
       .then(response =>response.json())
       .then(result => console.log(result))
-})
+})*/
 
 /*let usuario = {
     id: 155,
@@ -202,6 +204,7 @@ envio.onclick = ()=>{
 const agregarCarritoBtn = document.querySelectorAll(".addCarrito")
 const carritoContent = document.querySelector(".carritoContent")
 console.log( agregarCarritoBtn, carritoContent)
+const itemConteiner = document.querySelector(".itemConteiner")
 
 agregarCarritoBtn.forEach( agregarBtn => {
 
@@ -216,7 +219,7 @@ function agregarCarritoClick(event){
 
   const itemNombre = item.querySelector(".pieDeFoto").textContent;
   const itemPrecio = item.querySelector("p").textContent;
-  const itemFoto = item.querySelector(".foto").src;
+  const itemFoto = item.querySelector('.foto').src;
 
   agregarAlCarrito(itemNombre, itemPrecio, itemFoto)
 }
@@ -224,8 +227,13 @@ function agregarCarritoClick(event){
 
 function agregarAlCarrito(itemNombre, itemPrecio,itemFoto){
 
-  carritoContent.innerHTML =`<img src="${itemFoto} class="img-fluid foto" alt="zapatillas jordan 1 low travis scott">
+  const carritoRow = document.createElement('div')
+
+  const carritoContent =`<img src="${itemFoto} class="img-fluid foto" alt="zapatillas jordan 1 low travis scott">
   <figcaption class="pieDeFoto carritoColor">${itemNombre}</figcaption>
   <p class="carritoColor">${itemPrecio}</p>`
+
+  carritoRow.innerHTML = carritoContent
+  itemConteiner.append(carritoRow)
 }
 
